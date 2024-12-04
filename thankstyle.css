@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+::selection {
+    color: white;
+    background: var(--hover-color);
+}
+
+:root {
+    --main-color: #9cdfba;
+    --hover-color: #e89b9b;
+    --submain-color: #9bc7ff;
+    --text-color: #333333;
+    --box-color: #ffffff;
+}
+
+
+.thankyou-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.thankyou-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.thankyou-title {
+    font-size: 2.5em;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.thankyou-message {
+    font-size: 1.2em;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.order-summary-section {
+    margin-bottom: 30px;
+}
+
+.order-summary-section h2 {
+    font-size: 1.8em;
+    color: var(--submain-color);
+    margin-bottom: 10px;
+}
+
+.order-summary-section p {
+    font-weight: bold;
+    color: #333333;
+    font-size: 1.2rem;
+}
+
+
+.order-summary-section span {
+    font-size: 0.9em;
+    color: #555555;
+    margin-bottom: 8px;
+}
+
+
+.support-section {
+    margin-bottom: 30px;
+}
+
+.support-section h2 {
+    font-size: 1.8em;
+    color: var(--submain-color);
+    margin-bottom: 10px;
+}
+
+.support-section p {
+    font-size: 1.2em;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+.support-section a {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: underline var(--main-color);
+    transition: color 0.3s;
+
+}
+
+.feedback-section {
+    margin-bottom: 30px;
+}
+
+.feedback-section h2 {
+    font-size: 1.8em;
+    color: var(--submain-color);
+    margin-bottom: 10px;
+}
+
+.feedback-section p {
+    font-size: 1.2em;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+.feedback-section a {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: underline var(--main-color);
+    transition: color 0.3s;
+}
+
+.action-buttons-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.return-home-button {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: var(--main-color);
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.return-home-button:hover {
+    background-color: #44c47d;
+}
+
+.shop-again-button {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: var(--submain-color);
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.shop-again-button:hover {
+    background-color: #0056b3;
+}

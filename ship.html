@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Form - Sunrise Bakery</title>
+    <script src="rightclick.js"></script>
+    <link rel="stylesheet" href="shipstyle.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">Sunrise <span>Bakery</span></a>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </header>
+
+    <!-- Home -->
+    <div class="ship-home" id="home">
+        <h1>Free Shipment</h1>
+        <p>all over france!</p>
+    </div>
+
+    <!-- Full-Width Shipping Form -->
+    <section class="form-sec">
+        <div class="form-wrapper">
+            <div class="content-wrapper">
+                <h1 class="main-title">Shipping Information</h1>
+                <form action="thanks.html" method="POST" class="shipping-form">
+
+                    <!-- Personal Information Section -->
+                    <div class="personal-section">
+                        <h2 class="personal-title">Personal Information</h2>
+                        <div class="name-group">
+                            <label for="name" class="name-label">Full Name:</label>
+                            <input type="text" id="name" name="name" class="name-input" required>
+                        </div>
+                        <div class="email-group">
+                            <label for="email" class="email-label">Email Address:</label>
+                            <input type="email" id="email" name="email" class="email-input" required>
+                        </div>
+                        <div class="phone-group">
+                            <label for="phone" class="phone-label">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" class="phone-input" required>
+                        </div>
+                    </div>
+
+                    <!-- Address Information Section -->
+                    <div class="address-section">
+                        <h2 class="address-title">Address</h2>
+                        <div class="address-group">
+                            <label for="address" class="address-label">Street Address:</label>
+                            <input type="text" id="address" name="address" class="address-input" required>
+                        </div>
+                        <div class="city-group">
+                            <label for="city" class="city-label">City:</label>
+                            <input type="text" id="city" name="city" class="city-input" required>
+                        </div>
+                        <div class="state-group">
+                            <label for="state" class="state-label">State/Province:</label>
+                            <input type="text" id="state" name="state" class="state-input" required>
+                        </div>
+                        <div class="zip-group">
+                            <label for="zip" class="zip-label">Zip/Postal Code:</label>
+                            <input type="text" id="zip" name="zip" class="zip-input" required>
+                        </div>
+                        <div class="country-group">
+                            <label for="country" class="country-label">Country:</label>
+                            <select id="country" name="country" class="country-select" required>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="USA">United States</option>
+                                <option value="Canada">Canada</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Payment Method Section -->
+                    <div class="payment-section">
+                        <h2 class="payment-title">Payment Method</h2>
+                        <div class="credit-card-group">
+                            <label class="credit-card-label">
+                                <input type="radio" name="payment_method" value="credit_card" class="credit-card-radio"
+                                    required> Credit Card
+                            </label>
+                        </div>
+                        <div class="paypal-group">
+                            <label class="paypal-label">
+                                <input type="radio" name="payment_method" value="paypal" class="paypal-radio"> PayPal
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Order Summary Section -->
+                    <div class="order-summary-section">
+                        <h2 class="summary-title">Order Summary</h2>
+                        <p class="summary-items">Items Ordered: 3</p>
+                        <p class="summary-total">Total Amount: 700rs.</p>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-button">Submit Shipping Info</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
